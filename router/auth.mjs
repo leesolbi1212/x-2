@@ -2,7 +2,7 @@ import express from "express";
 import * as authController from "../controller/auth.mjs";
 import { body } from "express-validator";
 import { validate } from "../middleware/validator.mjs";
-import { pool } from "../db/database.mjs";
+import { db } from "../db/database.mjs";
 const router = express.Router();
 
 const validateLogin = [
