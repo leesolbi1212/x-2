@@ -9,10 +9,7 @@
 */
 
 import { config } from "../config.mjs";
-
 import Mongoose from "mongoose";
-
-let db;
 
 export async function connectDB() {
   return Mongoose.connect(config.db.host);
